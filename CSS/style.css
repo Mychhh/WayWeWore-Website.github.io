@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
+
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Goldman', cursive;
+}
+/* Navigation bar */
+nav{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: 2rem auto;
+}
+
+/* nav button and img */
+nav button, nav button img{
+    width: 2rem;
+    height: 2rem;
+}
+/* nav button */
+nav #hamburger-menu{
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+/* menu */
+nav #menu{
+    width: max(40vw, 30rem);
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+#menu a, #menu a:visited{
+    color: #09131C;
+    text-decoration: none;
+    font-size: 2.25rem;
+} 
+#menu a:active{
+    color: #D839A2;
+} 
+
+/* figure */
+nav #logo, nav #logo img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+/* nav logo */
+nav #logo{
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+/* Mobile Menu */
+#menu-container-mobile{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 2rem 0 2rem;
+    width: 80vw;
+    height: 100vh;
+    background-color: #09131C;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* menu-mobile */
+#menu-mobile{
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#menu-mobile{
+    list-style-type: none;
+}
+#menu-mobile a:link, #menu-mobile a:visited{
+    color: #F5F5F5;
+    padding: 0;
+    text-decoration: none;
+}
+#menu-mobile a:hover{
+    text-decoration: underline;
+}
+#menu-mobile a:active{
+    color: #D839A2;
+}
+/* menu close button */
+#close-button{
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    color: #F5F5F5;
+}
+#close-button, #close-button img{
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Nav menu breakpoints */
+@media screen and (max-width: 768px) {
+    nav #menu{
+        display: none;
+    }
+}
+@media screen and (min-width: 769px) {
+    nav #hamburger-menu{
+        display: none;
+    }
+}
+
+/* EXTRA SMALL SCREEN */
+@media screen and (max-width: 481px) {
+    body {
+        background-color: rgb(146, 144, 90);
+      }
+}
+/* SMALL SCREEN */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
+/* MEDIUM SCREEN */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+      background-color: rgb(144, 211, 238);
+    }
+  }
+/* LARGE SCREEN */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    body {
+      background-color: rgb(180, 144, 238);
+    }
+  }
+/* EXTRA LARGE SCREEN */
+@media screen and (min-width: 1201px) {
+    body {
+      background-color: rgb(238, 144, 200);
+    }
+  }
