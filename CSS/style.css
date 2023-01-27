@@ -42,6 +42,9 @@ nav #menu{
     text-decoration: none;
     font-size: 2.25rem;
 } 
+#menu a:hover{
+    text-decoration: underline;
+} 
 #menu a:active{
     color: #D839A2;
 } 
@@ -131,6 +134,9 @@ nav #logo{
     /* body {
         background-color: rgb(146, 144, 90);
       } */
+    #menu-container-mobile{
+    width: 100vw;
+    }
 }
 /* SMALL SCREEN */
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -156,3 +162,10 @@ nav #logo{
       background-color: rgb(238, 144, 200);
     } */
   }
+  
+/* MOBILE DEVICE LANDSCAPE */
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4){
+    #menu-mobile{
+        height: 50%;
+    }
+}
