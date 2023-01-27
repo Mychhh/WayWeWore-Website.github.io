@@ -15,7 +15,8 @@ nav{
     display: flex;
     width: 90%;
     justify-content: space-between;
-    margin: 2rem auto;
+    align-items: center;
+    margin: 1rem auto;
 }
 
 /* nav button and img */
@@ -112,34 +113,46 @@ nav #logo{
         display: none;
     }
 }
-
+/* Logo breakpoints */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    nav #logo, nav #logo img{
+        width: 3rem;
+        height: 3rem;
+    }
+}
+@media screen and (min-width: 769px) {
+    nav #logo, nav #logo img{
+        width: 4rem;
+        height: 4rem;
+    }
+}
 /* EXTRA SMALL SCREEN */
 @media screen and (max-width: 481px) {
-    body {
+    /* body {
         background-color: rgb(146, 144, 90);
-      }
+      } */
 }
 /* SMALL SCREEN */
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    body {
+    /* body {
       background-color: lightgreen;
-    }
+    } */
   }
 /* MEDIUM SCREEN */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    body {
+    /* body {
       background-color: rgb(144, 211, 238);
-    }
+    } */
   }
 /* LARGE SCREEN */
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
-    body {
+    /* body {
       background-color: rgb(180, 144, 238);
-    }
+    } */
   }
 /* EXTRA LARGE SCREEN */
 @media screen and (min-width: 1201px) {
-    body {
+    /* body {
       background-color: rgb(238, 144, 200);
-    }
+    } */
   }
