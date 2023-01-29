@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
 /* RESET */
-*{
+*,
+*::before,
+*::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,12 +11,12 @@ body{
     font-family: 'Goldman', cursive;
 }
 :root{
-    --LEGEND1: #09131C;
-    --LEGEND2: #F5F5F5;
-    --LEGEND3: #D839A2;
+    --LEGEND1-BLACK: #09131C;
+    --LEGEND2-WHITE: #F5F5F5;
+    --LEGEND3-PINK: #D839A2;
 }
 /* Navigation bar */
-nav{
+.nav{
     display: flex;
     width: 90%;
     justify-content: space-between;
@@ -22,12 +24,12 @@ nav{
     margin: 1rem auto;
 }
 /* nav button and img */
-nav button, nav button img{
+.nav button, nav button img{
     width: 2rem;
     height: 2rem;
 }
 /* nav button */
-nav #hamburger-menu{
+.nav #nav__hamburger-menu{
     border: 0;
     background-color: transparent;
     cursor: pointer;
@@ -42,7 +44,7 @@ nav #hamburger-menu{
     height: 5px;
     width: 40px;
     border-radius: 5px;
-    background-color: var(--LEGEND1);
+    background-color: var(--LEGEND1-BLACK);
     position: absolute;
     transition: all 0.5s;
 }
@@ -57,30 +59,30 @@ nav #hamburger-menu{
     transform: translate(-20px, -12px);
 }
 /* menu */
-nav #menu{
+.nav #nav__menu{
     width: max(40vw, 30rem);
     display: flex;
     justify-content: space-between;
     list-style-type: none;
 }
-#menu a, #menu a:visited{
-    color: var(--LEGEND1);
+#nav__menu a, #nav__menu a:visited{
+    color: var(--LEGEND1-BLACK);
     text-decoration: none;
     font-size: 2.25rem;
 } 
-#menu a:hover{
+#nav__menu a:hover{
     text-decoration: underline;
 } 
-#menu a:active{
-    color: var(--LEGEND3);
+#nav__menu a:active{
+    color: var(--LEGEND3-PINK);
 } 
 /* figure */
-nav #logo, nav #logo img{
-    width: 2.5rem;
-    height: 2.5rem;
+.nav #nav__logo, nav #nav__logo img{
+    width: 3.3rem;
+    height: 3.3rem;
 }
 /* nav logo */
-nav #logo{
+.nav #nav__logo{
     border: 0;
     background-color: transparent;
     cursor: pointer;
@@ -92,7 +94,7 @@ nav #logo{
     padding: 3rem 2rem 0 2rem;
     width: 80vw;
     height: 100vh;
-    background-color: var(--LEGEND1);
+    background-color: var(--LEGEND1-BLACK);
     position: absolute;
     top: 0;
     left: 0;
@@ -124,7 +126,7 @@ nav #logo{
     list-style-type: none;
 }
 #menu-mobile a:link, #menu-mobile a:visited{
-    color: var(--LEGEND2);
+    color: var(--LEGEND2-WHITE);
     padding: 0;
     text-decoration: none;
     font-size: 1.5rem;
@@ -133,14 +135,14 @@ nav #logo{
     text-decoration: underline;
 }
 #menu-mobile a:active{
-    color: var(--LEGEND3);
+    color: var(--LEGEND3-PINK);
 }
 /* menu close button */
 #close-button{
     border: 0;
     background-color: transparent;
     cursor: pointer;
-    color: var(--LEGEND2);
+    color: var(--LEGEND2-WHITE);
 }
 #close-button, #close-button img{
     width: 1rem;
@@ -149,24 +151,24 @@ nav #logo{
 
 /* Nav menu breakpoints */
 @media screen and (max-width: 768px) {
-    nav #menu{
+    .nav #nav__menu{
         display: none;
     }
 }
 @media screen and (min-width: 769px) {
-    nav #hamburger-menu{
+    .nav #nav__hamburger-menu{
         display: none;
     }
 }
 /* Logo breakpoints */
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    nav #logo, nav #logo img{
-        width: 3rem;
-        height: 3rem;
+    .nav #nav__logo, nav #nav__logo img{
+        width: 3.5rem;
+        height: 3.5rem;
     }
 }
 @media screen and (min-width: 769px) {
-    nav #logo, nav #logo img{
+    .nav #nav__logo, nav #nav__logo img{
         width: 4rem;
         height: 4rem;
     }
