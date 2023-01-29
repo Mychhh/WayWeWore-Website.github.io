@@ -27,12 +27,12 @@
     position: absolute;
     background: none;
     border: none;
-    font-size: 4rem;
+    font-size: clamp(2rem, 5vw, 4rem);
     top: 50%;
     z-index: 2;
     cursor: pointer;
     transform: translateY(-50%);
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.64);
     border-radius: 0.25em;
     padding: 0.2rem .5rem;
     background-color: rgba(0, 0, 0, .1);
@@ -43,10 +43,11 @@
     background-color: rgba(0, 0, 0, .2);
 }
 .carousel-button:focus{
-    outline: 1px solid black;
+    outline: 1px solid rgba(0, 0, 0, 0.266);
 }
 .carousel-button.prev{
     left: 1rem;
+    transform: rotateY(180deg) translateY(-50%);
 }
 .carousel-button.next{
     right: 1rem;
