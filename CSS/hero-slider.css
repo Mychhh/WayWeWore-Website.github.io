@@ -52,3 +52,27 @@
 .carousel-button.next{
     right: 1rem;
 }
+
+@keyframes slide-from-left {
+    0%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide-from-right {
+    0%{
+        transform: translateX(100%);
+    }
+    50%{
+        transform: translateX(50%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}

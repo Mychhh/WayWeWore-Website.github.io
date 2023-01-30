@@ -64,7 +64,7 @@ body{
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    text-shadow: #000 1px 1px 0.15rem;
+    text-shadow: var(--LEGEND1-BLACK) 0.5px 0.5px 0.05rem;
 }
 #nav__menu a, #nav__menu a:visited{
     color: var(--LEGEND1-BLACK);
@@ -73,6 +73,7 @@ body{
 } 
 #nav__menu a:hover{
     text-decoration: underline;
+    /* text-shadow: var(--LEGEND1-BLACK) 0.5px 0.5px 0.05rem; */
 } 
 #nav__menu a:active{
     color: var(--LEGEND3-PINK);
@@ -133,7 +134,7 @@ body{
     padding: 0;
     text-decoration: none;
     font-size: 1.5rem;
-    text-shadow: #fff 1px 1px 0.15rem;
+    text-shadow: var(--LEGEND2-WHITE) 0.5px 0.5px 0.05rem;
 }
 #menu-mobile a:hover{
     text-decoration: underline;
