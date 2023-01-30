@@ -2,6 +2,7 @@
     width: 100%;
     height: 70vh;
     position: relative;
+    overflow: hidden;
 }
 .carousel > ul{
     margin: 0;
@@ -52,8 +53,16 @@
 .carousel-button.next{
     right: 1rem;
 }
+/* SMALL SCREEN */
+@media screen and (max-width: 481px){
+    .carousel{
+        width: 100%;
+        height: 50vh;
+    }
+}
 
-@keyframes slide-from-left {
+/* animation when slides */
+/* @keyframes slide-from-left {
     0%{
         transform: translateX(-100%);
     }
@@ -75,4 +84,28 @@
     100%{
         transform: translateX(0%);
     }
+} */
+
+/* @keyframes old-slide-to-right {
+    0%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(50%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
 }
+
+@keyframes old-slide-to-left {
+    0%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+} */
