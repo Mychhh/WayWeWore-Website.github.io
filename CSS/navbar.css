@@ -9,6 +9,7 @@
 }
 body{
     font-family: 'Goldman', cursive;
+    background-color: #F5F5F5;
 }
 :root{
     --LEGEND1-BLACK: #09131C;
@@ -18,7 +19,7 @@ body{
 /* Navigation bar */
 .nav{
     display: flex;
-    width: 90%;
+    width: 80%;
     justify-content: space-between;
     align-items: center;
     margin: 1rem auto;
@@ -159,6 +160,9 @@ body{
     .nav #nav__menu{
         display: none;
     }
+    .nav{
+        width: 90%;
+    }
 }
 @media screen and (min-width: 769px) {
     .nav #nav__hamburger-menu{
@@ -198,6 +202,9 @@ body{
     /* body {
       background-color: rgb(144, 211, 238);
     } */
+    .nav{
+        width: 90%;
+    }
   }
 /* LARGE SCREEN */
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
