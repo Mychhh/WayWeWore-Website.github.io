@@ -1,7 +1,7 @@
 .product{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 80%;
     gap: clamp(1rem, 5vh, 5rem);
     margin: clamp(1rem, 5vh, 5rem) auto;
