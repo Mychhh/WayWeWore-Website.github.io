@@ -1,0 +1,116 @@
+:root{
+    --LEGEND1-BLACK: #09131C;
+    --LEGEND2-WHITE: #F5F5F5;
+    --LEGEND3-PINK: #D839A2;
+}
+.models-container{
+    background-color: var(--LEGEND1-BLACK);
+    width: 100%;
+    height: auto;
+    padding: clamp(1rem, 2.5vh, 2rem) 0;
+}
+/* Container of models */
+.models-container__models{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+@media screen and (max-width:  1024px) {
+    .models-container__models{
+        width: 90%;
+    }
+}
+/* WayWeWore */
+.models-container__waywewore{
+    text-transform: uppercase;
+    color: var(--LEGEND2-WHITE);
+    font-size: clamp(1rem, 4vw, 2rem);
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.models-container__waywewore > h1{
+    transform: rotate(-90deg);
+}
+.models-container__models-slider-container{
+    width: 50%;
+    height: 60vh;
+    background-color: aquamarine;
+}
+
+/* EXTRA SMALL SCREEN */
+@media screen and (max-width: 481px) {
+    #menu-container-mobile{
+    width: 100vw;
+    }
+    .models-container__models-slider-container{
+        width: 100%;
+    }
+    .models-container__waywewore{
+        width: 100%;
+        text-align: center;
+    }
+    .models-container__waywewore > h1{
+        transform: rotate(0) translate(0%);
+        width: 100%;
+        text-align: center;
+        margin: 0 0 1rem 0;
+    }
+    .models-container__models{
+        flex-flow: column nowrap;
+    }
+}
+/* SMALL SCREEN */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .models-container__models-slider-container{
+        width: 100%;
+    }
+    .models-container__waywewore{
+        width: 100%;
+        text-align: center;
+    }
+    .models-container__waywewore > h1{
+        transform: rotate(0) translate(0%);
+        width: 100%;
+        text-align: center;
+        margin: 0 0 1rem 0;
+    }
+    .models-container__models{
+        flex-flow: column nowrap;
+    }
+}
+/* MEDIUM SCREEN */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .models-container__models-slider-container{
+        width: 70%;
+        height: 60vh;
+    }
+    .models-container__waywewore > h1{
+        transform: rotate(-90deg) translateY(130%);
+    }
+}
+/* LARGE SCREEN */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .models-container__models-slider-container{
+        width: 60%;
+        height: 60vh;
+    }
+}
+/* EXTRA LARGE SCREEN */
+@media screen and (min-width: 1201px) {
+    .models-container__models-slider-container{
+        width: 60%;
+        height: 60vh;
+    }
+}
+  
+/* MOBILE DEVICE LANDSCAPE */
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4){
+    #menu-mobile{
+        height: 50%;
+    }
+}
