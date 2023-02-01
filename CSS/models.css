@@ -39,7 +39,6 @@
 .models-container__models-slider-container{
     width: 50%;
     height: 60vh;
-    background-color: aquamarine;
     position: relative;
     overflow: hidden;
 }
@@ -50,19 +49,15 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: #ae8708;
 }
 .models-container__models-slide:nth-child(1){
     left: 0;
-    background-color: #5308ae;
 }
 .models-container__models-slide:nth-child(2){
     left: 100%;
-    background-color: #08ae9d;
 }
 .models-container__models-slide:nth-child(3){
     left: 200%;
-    background-color: #08ae0e;
 }
 .models-container__models-slide{
     transform: translateX(0%);
@@ -70,7 +65,7 @@
 /* Model background */
 .models-container__models-slide:nth-child(1) > .models-container__slide-image{
     width: 100%;
-    height: 65%;
+    height: 70%;
     background-image: url(/Images/Model-Marvin.PNG);
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,7 +73,7 @@
 }
 .models-container__models-slide:nth-child(2) > .models-container__slide-image{
     width: 100%;
-    height: 65%;
+    height: 70%;
     background-image: url(/Images/Capture.PNG);
     background-repeat: no-repeat;
     background-size: cover;
@@ -86,7 +81,7 @@
 }
 .models-container__models-slide:nth-child(3) > .models-container__slide-image{
     width: 100%;
-    height: 65%;
+    height: 70%;
     background-image: url(/Images/maxresdefault.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -100,24 +95,37 @@
     bottom: 1rem;
     right: 1rem;
 }
-
 .models-container__buttons > button{
     width: 2.5vw;
     height: 3vh;
     cursor: pointer;
-    font-size: 2vw;
+    font-size: clamp(1rem, 5vh, 2rem);
     font-weight: bolder;
     color: var(--LEGEND2-WHITE);
     border: 0;
     background-color: transparent;
+    margin-right: clamp(0.5em, 1vw, 1em);
 }
-.models-container__buttons > button:hover{
-    transition-property: all;
-    transition-duration: 500ms;
-    transform : scale(1.2);
-}
-
 /* End of buttons */
+
+/* Dialogue and model name*/
+.models-cantainer__dialogue{
+    font-size: clamp(0.65rem, 5vw, 1.25rem);
+    margin: 2% 10% 0 0.5%;
+    color: var(--LEGEND2-WHITE);
+}
+.models-container__model-name{
+    display: inline-block;
+    font-size: clamp(0.5rem, 5vw, 1.2rem);
+    color: var(--LEGEND3-PINK);
+    border-bottom: 3px solid var(--LEGEND3-PINK);
+    padding-right: 1.5rem;
+    width: auto;
+    position: absolute;
+    bottom: 1rem;
+    left: 0.5%;
+}
+/* End of Dialogue and Model Name */
 
 /* End of Model Slide */
 
