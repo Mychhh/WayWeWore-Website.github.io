@@ -33,19 +33,19 @@ buttons.forEach( (button, index)  => {
         if(button.dataset.carouselButton === "next") {
             // activeSlide.style.animation = "old-slide-to-right 0.5s linear"
             activeSlide.style.opacity = 0;
-            activeSlide.style.transition = "opacity 0.5s"
+            activeSlide.style.transition = "opacity 0.65s"
 
             // slides.children[slideIndex].style.animation = "slide-from-left 0.5s linear forward"
             slides.children[slideIndex].style.opacity = 1;
-            slides.children[slideIndex].style.transition = "opacity 0.5s"
+            slides.children[slideIndex].style.transition = "opacity 0.65s"
         }else{
             // activeSlide.style.animation = "old-slide-to-left 0.5s linear"
             activeSlide.style.opacity = 0;
-            activeSlide.style.transition = "opacity 0.5s"
+            activeSlide.style.transition = "opacity 0.65s"
 
             // slides.children[slideIndex].style.animation = "slide-from-right 0.5s linear forward"   
             slides.children[slideIndex].style.opacity = 1;
-            slides.children[slideIndex].style.transition = "opacity 0.5s"
+            slides.children[slideIndex].style.transition = "opacity 0.65s"
         }
 
         //deletes the active data attributes(data-active)
