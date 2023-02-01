@@ -36,6 +36,3 @@ const moveCarousel = () => {
     })
 }
 
-
-console.log(slide)
-

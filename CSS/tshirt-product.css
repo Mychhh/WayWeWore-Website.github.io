@@ -10,6 +10,9 @@
 #tshirt{
     border-bottom: 3px solid black;
 }
+#tshort{
+    margin-bottom: 0;
+}
 /* Shirt */
 .product__shirt{
     width: clamp(20rem, 55vh, 45vh);
