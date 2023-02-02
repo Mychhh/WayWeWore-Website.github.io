@@ -23,6 +23,9 @@
         width: 90%;
     }
 }
+#gallery{
+    scroll-margin-top: 8rem;
+}
 /* Recomendation Slider */
 .recommendation-container__recommendation-slider-container{
     width: 80%;

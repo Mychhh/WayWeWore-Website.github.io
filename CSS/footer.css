@@ -1,0 +1,176 @@
+:root{
+    --LEGEND1-BLACK: #09131C;
+    --LEGEND2-WHITE: #F5F5F5;
+    --LEGEND3-PINK: #D839A2;
+    --FONT-SIZE: clamp(0.65rem, 5vw, 1.25rem);
+    --FOOTER-TEXT-GAP: 0.2rem 0;
+}
+.footer{
+    width: 100%;
+    height: auto;
+    padding: clamp(2rem, 4.5vh, 3rem) 0;
+    background-color: var(--LEGEND1-BLACK);
+}
+.footer h1{
+    margin-top: 3rem;
+}
+.footer__footer-container{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 3rem auto 0 auto;
+    color: var(--LEGEND2-WHITE);
+}
+/* footer logo - dialogue */
+.footer__logo-dialogue{
+    width: 25%;
+    height: auto;
+    padding: 0 clamp(0.5rem, 1.5vw, 1rem);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.footer-logo{
+    width: clamp(10rem, 12vw, 15rem);
+    height: auto;
+    border: 3px solid var(--LEGEND2-WHITE);
+    border-radius: 50%;
+}
+.footer-dialogue{
+    margin-top: 2rem;
+    font-size: var(--FONT-SIZE);
+    text-align: start;
+}
+/* End of footer logo - dialogue */
+
+/* footer links */
+.footer__useful-links{
+    width: 25%;
+    height: auto;
+    padding: 0 clamp(0.5rem, 1.5vw, 1rem);
+    border-left: 2px solid var(--LEGEND2-WHITE);
+}
+.footer_ul{
+    list-style: square;
+    display: inline-block;
+    padding: 0 clamp(1rem, 3vw, 2rem);
+    font-size: var(--FONT-SIZE);
+    margin-top: 1rem;
+}
+.footer_ul li{
+    margin: var(--FOOTER-TEXT-GAP);
+}
+.footer_ul a{
+    text-decoration: none;
+}
+.footer_ul :is(a, a:active){
+    color: var(--LEGEND2-WHITE);
+}
+.footer_ul :is(a:hover, li:hover){
+    color: var(--LEGEND3-PINK);
+    text-decoration: underline;
+}
+/* End of footer links */
+
+/* Footer Follow-Us */
+.footer__follow-us{
+    width: 25%;
+    height: auto;
+    padding: 0 clamp(0.5rem, 1.5vw, 1rem);
+    border-left: 2px solid var(--LEGEND2-WHITE);
+}
+/* End of Footer Follow-Us */
+
+/* Footer Address */
+.footer__address{
+    width: 25%;
+    height: auto;
+    padding: 0 clamp(0.5rem, 1.5vw, 1rem);
+    border-left: 2px solid var(--LEGEND2-WHITE);
+}
+.footer__address li:last-child{
+    word-break: break-all;
+}
+/* End of Footer Address */
+
+/* EXTRA SMALL SCREEN */
+@media screen and (max-width: 481px) {
+    .footer h1{
+    margin-top: 0;
+    }
+    .footer__footer-container{
+    flex-flow: column nowrap;
+    margin: 1rem auto 0 auto;
+    }
+    .footer__logo-dialogue{
+        width: 100%;
+    }
+    .footer__useful-links{
+        width: 100%;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-left: 0px solid var(--LEGEND2-WHITE);
+        border-top: 2px solid var(--LEGEND2-WHITE);
+    }
+    .footer__follow-us{
+        width: 100%;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-left: 0px solid var(--LEGEND2-WHITE);
+        border-top: 2px solid var(--LEGEND2-WHITE);
+    }
+    .footer__address{
+        width: 100%;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-left: 0px solid var(--LEGEND2-WHITE);
+        border-top: 2px solid var(--LEGEND2-WHITE);
+    }
+}
+/* SMALL SCREEN */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .footer h1{
+    margin-top: 0;
+    }
+    .footer__footer-container{
+    flex-flow: column nowrap;
+    margin: 1rem auto 0 auto;
+    }
+    .footer__logo-dialogue{
+        width: 100%;
+    }
+    .footer__useful-links{
+        width: 100%;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-left: 0px solid var(--LEGEND2-WHITE);
+        border-top: 2px solid var(--LEGEND2-WHITE);
+    }
+    .footer__follow-us{
+        width: 100%;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-left: 0px solid var(--LEGEND2-WHITE);
+        border-top: 2px solid var(--LEGEND2-WHITE);
+    }
+    .footer__address{
+        width: 100%;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-left: 0px solid var(--LEGEND2-WHITE);
+        border-top: 2px solid var(--LEGEND2-WHITE);
+    }
+}
+/* MEDIUM SCREEN */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}
+/* LARGE SCREEN */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+}
+/* EXTRA LARGE SCREEN */
+@media screen and (min-width: 1201px) {
+}
+/* MOBILE DEVICE LANDSCAPE */
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4){
+}

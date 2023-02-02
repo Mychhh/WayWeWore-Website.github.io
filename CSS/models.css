@@ -9,6 +9,10 @@
     height: auto;
     padding: clamp(2rem, 4.5vh, 4rem) 0;
 }
+#models{
+    scroll-margin-top: 8rem;
+}
+
 /* Container of models */
 .models-container__models{
     display: flex;

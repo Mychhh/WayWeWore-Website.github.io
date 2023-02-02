@@ -9,6 +9,9 @@
     padding: 0;
     list-style: none;
 }
+.slider{
+    scroll-margin-top: 6rem;
+}
 .slide{
     position: absolute;
     inset: 0;
@@ -60,52 +63,3 @@
         height: 50vh;
     }
 }
-
-/* animation when slides */
-/* @keyframes slide-from-left {
-    0%{
-        transform: translateX(-100%);
-    }
-    50%{
-        transform: translateX(-50%);
-    }
-    100%{
-        transform: translateX(0%);
-    }
-}
-
-@keyframes slide-from-right {
-    0%{
-        transform: translateX(100%);
-    }
-    50%{
-        transform: translateX(50%);
-    }
-    100%{
-        transform: translateX(0%);
-    }
-} */
-
-/* @keyframes old-slide-to-right {
-    0%{
-        transform: translateX(0%);
-    }
-    50%{
-        transform: translateX(50%);
-    }
-    100%{
-        transform: translateX(100%);
-    }
-}
-
-@keyframes old-slide-to-left {
-    0%{
-        transform: translateX(0%);
-    }
-    50%{
-        transform: translateX(-50%);
-    }
-    100%{
-        transform: translateX(-100%);
-    }
-} */

@@ -22,7 +22,9 @@
         width: 90%;
     }
 }
-
+#contact{
+    scroll-margin-top: 8rem;
+}
 /* Contact Text */
 .contact-container__contact-text{
     width: 55%;

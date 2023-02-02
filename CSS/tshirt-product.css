@@ -9,6 +9,7 @@
 }
 #tshirt{
     border-bottom: 3px solid black;
+    scroll-margin-top: 1rem;
 }
 #tshort{
     margin-bottom: 0;

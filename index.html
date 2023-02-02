@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./CSS/models.css">
     <link rel="stylesheet" href="./CSS/recommendation.css">
     <link rel="stylesheet" href="./CSS/contact.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
     <!-- JS -->
     <script src="/JS/nav-script.js" defer></script>
     <script src="/JS/hero-slider-script.js" defer></script>
@@ -53,7 +54,7 @@
     <!-- End of Menu Mobile -->
 
     <!-- Hero Slider -->
-    <section class="slider">
+    <section class="slider" id="home_firstpage">
         <div class="carousel" data-carousel>
             <button class="carousel-button prev" data-carousel-button="prev">&#10151;</button>
             <button class="carousel-button next" data-carousel-button="next">&#10151;</button>
@@ -168,7 +169,7 @@
     <!-- End of Short Slider -->
 
     <!-- Models section -->
-    <section class="models-container">
+    <section class="models-container" id="models">
         <div class="models-container__models">
             <!-- WayWeWore -->
             <div class="models-container__waywewore">
@@ -214,7 +215,7 @@
     <!-- End of Models section -->
 
     <!-- Recommendation Section -->
-    <section class="recommendation-container">
+    <section class="recommendation-container" id="gallery">
         <div class="recommendation-container__recommendation">
             <!-- Recomendation Slider -->
             <div class="recommendation-container__recommendation-slider-container">
@@ -241,14 +242,14 @@
             </div>
             <!-- Recommendation -->
             <div class="recommendation-container__waywewore">
-                <h1>recomendations</h1>
+                <h1>recomendation</h1>
             </div>
         </div>
     </section>
     <!-- End of Recommendation Section -->
 
     <!-- Contact Section -->
-    <section class="contact-container">
+    <section class="contact-container" id="contact">
         <div class="contact-container__contact">
             <!-- Contact Text -->
             <div class="contact-container__contact-text">
@@ -276,6 +277,50 @@
         </div>
     </section>
     <!-- End of Contact Section -->
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer__footer-container">
+            <div class="footer__logo-dialogue">
+                <!-- logo -->
+                <figure>
+                    <img src="./Images/Favicon.webp" alt="Logo" class="footer-logo">
+                </figure>
+                <!-- dialogue -->
+                <div class="footer-dialogue">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum inventore quod natus fuga.</p>
+                </div>
+            </div>
+            <div class="footer__useful-links">
+                <h1>Useful Links</h1>
+                <ul class="footer_ul">
+                    <li><a href="#home_firstpage">Home</a></li>
+                    <li><a href="#tshirt">About</a></li>
+                    <li><a href="#models">Models</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="footer__follow-us">
+                <h1>Follow us</h1>
+                <ul class="footer_ul">
+                    <li><a href="#">Shopee</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Tik-Tok</a></li>
+                </ul>
+            </div>
+            <div class="footer__address" >
+                <h1>Address</h1>
+                <ul class="footer_ul">
+                    <li><a href="#">Barmat, Borol 1st, Balagtas, Bulacan</a></li>
+                    <li><a href="#">0966699969</a></li>
+                    <li><a href="#">waywewore@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End of Footer -->
 
 
 </body>
