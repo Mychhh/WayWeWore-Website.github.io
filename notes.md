@@ -7,3 +7,6 @@
 16px == 1rem
 
 Arrows => https://www.toptal.com/designers/htmlarrows/arrows/
+
+cards animation and design
+recommendation change to gallery
