@@ -256,21 +256,21 @@
             </div>
             <!-- Contact Form -->
             <div class="contact-container__contact-form">
-                <form action="#">
+                <form action="https://formspree.io/f/xwkjvyka" method="POST">
                     <h1>Contact Us</h1>
                     <div class="contact-container__name">
                         <label for="name">Name  </label><br>
-                        <input type="text" id="name" name="name">
+                        <input type="text" id="name" name="name" required>
                     </div>
                     <div class="contact-container__email">
                         <label for="email">Email  </label><br>
-                        <input type="text" id="email" name="email">
+                        <input type="text" id="email" name="email" required>
                     </div>
                     <div class="contact-container__message">
                         <label for="message">Message  </label><br>
-                        <textarea id="message" name="message"></textarea>
+                        <textarea id="message" name="message" required></textarea>
                     </div>
-                    <button type="submit">Send</button>
+                    <button type="submit" id="contact-container__button">Send</button>
                 </form>
             </div>
         </div>

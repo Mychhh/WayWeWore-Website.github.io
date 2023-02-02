@@ -31,6 +31,7 @@
     align-items: center;
     justify-content: center;
     font-size: var(--FONT-SIZE);
+    text-align: left;
 }
 /* End of Contact Text */
 
@@ -67,8 +68,7 @@
 .contact-container__email > #email{
     height: 2rem;
 }
-.contact-container__message > #message
-{
+.contact-container__message > #message{
     height: 20vh;
 }
 .contact-container__name > #name,
@@ -79,6 +79,11 @@
     border-radius: 0.3rem;
     font-size: calc(var(--FONT-SIZE) - 0.2vw);
     padding: clamp(0.8rem, 2vh, 1.8rem);
+}
+#contact-container__button:hover{
+    transform: scale(1.1);
+    transition-property: all;
+    transition-duration: 0.5s;
 }
 /* End of Contact-Form */
 
@@ -93,6 +98,7 @@
     }
     .contact-container__contact-form{
         width: 100%;
+        margin: 2rem auto 0 auto;
     }
     
     .contact-container__contact-form > form{
@@ -110,7 +116,8 @@
         text-align: center;
     }
     .contact-container__contact-form{
-        width: 100%;
+        width: 80%;
+        margin: 2rem auto 0 auto;
     }
     
     .contact-container__contact-form > form{
@@ -120,9 +127,21 @@
 }
 /* MEDIUM SCREEN */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .contact-container__contact-text{
+        width: 40%;
+    }
+    .contact-container__contact-form{
+        width: 60%;
+    }
 }
 /* LARGE SCREEN */
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .contact-container__contact-text{
+        width: 40%;
+    }
+    .contact-container__contact-form{
+        width: 60%;
+    }
 }
 /* EXTRA LARGE SCREEN */
 @media screen and (min-width: 1201px) {
