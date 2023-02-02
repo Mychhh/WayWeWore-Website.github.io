@@ -178,7 +178,7 @@
         transform: rotate(0) translate(0%);
         width: 100%;
         text-align: center;
-        margin: 0 0 1rem 0;
+        margin: 0 0 2rem 0;
     }
     .models-container__models{
         flex-flow: column nowrap;
