@@ -160,8 +160,9 @@
 }
 .footer_credits p{
     color: var(--LEGEND2-WHITE);
-    font-size: 1.5rem;
+    font-size: calc(var(--FONT-SIZE) + 0.5vw);
     letter-spacing: 0.5rem;
+    text-align: center;
 }
 .credits{
     margin: 1.5rem 0;
