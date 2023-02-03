@@ -1,9 +1,9 @@
 // container for buttons
 // querySelectorAll gets all the matching element
-const buttons =  document.querySelectorAll("[data-carousel-button]");
+const buttons = document.querySelectorAll("[data-carousel-button]");
 
 //loop through buttons using foreach loop
-buttons.forEach( (button, index)  => {
+buttons.forEach((button, index) => {
 
     //adds click event listener for every button
     button.addEventListener("click", () => {
@@ -18,19 +18,19 @@ buttons.forEach( (button, index)  => {
         const activeSlide = slides.querySelector("[data-active]")
 
         //converts the slides children to array and finds the index of children where data attribute is active slide, then adds value to index depending on button clicked
-        let slideIndex = [...slides.children].indexOf(activeSlide) +  offset
+        let slideIndex = [...slides.children].indexOf(activeSlide) + offset
 
-        if(slideIndex < 0) {
+        if (slideIndex < 0) {
             slideIndex = slides.children.length - 1;
         }
-        else if(slideIndex >= slides.children.length) {
+        else if (slideIndex >= slides.children.length) {
             slideIndex = 0;
         }
 
         //adds a data attributes(data-active) to the specific index assigned
         slides.children[slideIndex].dataset.active = true
-        
-        if(button.dataset.carouselButton === "next") {
+
+        if (button.dataset.carouselButton === "next") {
             // activeSlide.style.animation = "old-slide-to-right 0.5s linear"
             activeSlide.style.opacity = 0;
             activeSlide.style.transition = "all 0.65s linear"
@@ -38,7 +38,7 @@ buttons.forEach( (button, index)  => {
             // slides.children[slideIndex].style.animation = "slide-from-left 0.5s linear forward"
             slides.children[slideIndex].style.opacity = 1;
             slides.children[slideIndex].style.transition = "all 0.65s linear"
-        }else{
+        } else {
             // activeSlide.style.animation = "old-slide-to-left 0.5s linear"
             activeSlide.style.opacity = 0;
             activeSlide.style.transition = "all 0.65s linear"
@@ -50,7 +50,55 @@ buttons.forEach( (button, index)  => {
 
         //deletes the active data attributes(data-active)
         delete activeSlide.dataset.active
-        
+
     })
-    
+
 })
+
+// Auto Slide
+function autoslide() {
+    let num = 0
+    timer = setInterval(() => {
+        buttons.forEach((button, index) => {
+
+            //closest() method gets the closest ancestor element
+            //querySelector gets the first matching element
+            //query starts to the matching element and traverse to the element
+            const slides = button.closest("[data-carousel]").querySelector("[data-slides]")
+            const activeSlide = slides.querySelector("[data-active]")
+
+            //converts the slides children to array and finds the index of children where data attribute is active slide, then adds value to index depending on button clicked
+            let slideIndex = [...slides.children].indexOf(activeSlide) + 1
+
+            if (slideIndex < 0) {
+                slideIndex = slides.children.length - 1;
+            }
+            else if (slideIndex >= slides.children.length) {
+                slideIndex = 0;
+            }
+
+            //adds a data attributes(data-active) to the specific index assigned
+            slides.children[slideIndex].dataset.active = true
+
+            activeSlide.style.opacity = 0;
+            activeSlide.style.transition = "all 0.65s linear"
+
+            // slides.children[slideIndex].style.animation = "slide-from-left 0.5s linear forward"
+            slides.children[slideIndex].style.opacity = 1;
+            slides.children[slideIndex].style.transition = "all 0.65s linear"
+
+
+            //deletes the active data attributes(data-active)
+            delete activeSlide.dataset.active
+
+        })
+    }, 5000)
+}
+
+window.onload = function () {
+    autoslide()
+}
+
+function pause() {
+    clearInterval(timer)
+}

@@ -64,10 +64,11 @@ body{
 }
 /* menu */
 .nav #nav__menu{
-    width: max(40vw, 30rem);
+    width: auto;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
+    gap: 3rem;
     text-shadow: var(--LEGEND1-BLACK) 0.5px 0.5px 0.05rem;
 }
 #nav__menu a, #nav__menu a:visited{
