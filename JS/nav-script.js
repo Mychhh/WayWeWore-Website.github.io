@@ -14,7 +14,7 @@ function show_hide(){
         document.getElementById("menu-container-mobile").style.display="flex";
         //animation to hide menu to the left
         document.getElementById("nav__hamburger-menu").style.transform = "translate(-300%)";
-        document.getElementById("nav__hamburger-menu").style.transitionDuration = "1s";
+        document.getElementById("nav__hamburger-menu").style.transitionDuration = "0.5s";
         return a = 1;
     }
     

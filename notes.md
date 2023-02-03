@@ -8,5 +8,5 @@
 
 Arrows => https://www.toptal.com/designers/htmlarrows/arrows/
 
+hero slider animation
 cards animation and design
-recommendation change to gallery
