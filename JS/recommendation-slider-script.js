@@ -31,3 +31,18 @@ const recommendationCarousel = () => {
         recommendation.style.transform = `translateX(-${recommendationSlideNumber * 100}%)`
     })
 }
+
+// function autoslideGallery() {
+//     timerGallery = setInterval(() => {
+//         recommendationSlideNumber++
+//         recommendationCarousel()
+//     }, 5000)
+// }
+
+// window.onload = function () {
+//     autoslideGallery()
+// }
+
+// function pauseGallery() {
+//     clearInterval(timerGallery)
+// }

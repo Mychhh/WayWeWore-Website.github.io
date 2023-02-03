@@ -207,8 +207,8 @@
                 </div>
                 <!-- Previous and Next button -->
                 <div class="models-container__buttons">
-                    <button type="button" onclick="prevButton()"> &#60; </button>
-                    <button type="button" onclick="nextButton()"> &#62; </button>
+                    <button type="button" onclick="prevButton(); pauseModel();"> &#60; </button>
+                    <button type="button" onclick="nextButton(); pauseModel();"> &#62; </button>
                 </div>
             </div>
         </div>
@@ -237,8 +237,8 @@
                 </div>
                 <!-- Previous and Next button -->
                 <div class="recommendation-container__buttons">
-                    <button type="button" class="recommendation-container__prevBtn"> &#60; </button>
-                    <button type="button" class="recommendation-container__nextBtn"> &#62; </button>
+                    <button type="button" class="recommendation-container__prevBtn" onclick="pauseGallery()"> &#60; </button>
+                    <button type="button" class="recommendation-container__nextBtn" onclick="pauseGallery()"> &#62; </button>
                 </div>
             </div>
             <!-- Recommendation -->

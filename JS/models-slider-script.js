@@ -36,3 +36,18 @@ const moveCarousel = () => {
     })
 }
 
+// // Model auto slider
+// function autoslideModel() {
+//     timerModel = setInterval(() => {
+//         nextButton()
+//     }, 5000)
+// }
+
+// window.onload = function () {
+//     autoslideModel()
+// }
+
+// function pauseModel() {
+//     clearInterval(timerModel)
+// }
+
