@@ -21,6 +21,8 @@
     height: auto;
     border-radius: 1rem;
     position: relative;
+    transform: scale(1);
+    transition-duration: 1s;
 }
 
 .product__shirt > img {
@@ -37,6 +39,8 @@
     height: auto;
     border-radius: 1rem;
     position: relative;
+    transform: scale(1);
+    transition-duration: 1s;
 }
 
 .product__short > img {

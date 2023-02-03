@@ -1,3 +1,22 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Goldman', cursive;
+    scroll-behavior: smooth;
+}
+
+body{
+    /* font-family: 'Goldman', cursive; */
+    background-color: #F5F5F5;
+}
+:root{
+    --LEGEND1-BLACK: #09131C;
+    --LEGEND2-WHITE: #F5F5F5;
+    --LEGEND3-PINK: #D839A2;
+}
 .carousel{
     width: 100%;
     height: 70vh;
@@ -11,6 +30,7 @@
 }
 .slider{
     scroll-margin-top: 6rem;
+    filter: drop-shadow(0 0 0.2rem var(--LEGEND1-BLACK));
 }
 .slide{
     position: absolute;

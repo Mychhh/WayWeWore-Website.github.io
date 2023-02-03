@@ -49,8 +49,9 @@
     width: 25%;
     height: auto;
     padding: 0 clamp(0.5rem, 1.5vw, 1rem);
-    border-left: 2px solid var(--LEGEND2-WHITE);
+    border-left: 1px solid var(--LEGEND2-WHITE);
 }
+
 .footer_ul{
     list-style: square;
     display: inline-block;
@@ -64,11 +65,13 @@
 .footer_ul a{
     text-decoration: none;
 }
-.footer_ul :is(a, a:active){
+.footer_ul a:active{
+    color: var(--LEGEND3-PINK);
+}
+.footer_ul :is(a){
     color: var(--LEGEND2-WHITE);
 }
 .footer_ul :is(a:hover, li:hover){
-    color: var(--LEGEND3-PINK);
     text-decoration: underline;
 }
 /* End of footer links */
@@ -78,7 +81,59 @@
     width: 25%;
     height: auto;
     padding: 0 clamp(0.5rem, 1.5vw, 1rem);
-    border-left: 2px solid var(--LEGEND2-WHITE);
+    border-left: 1px solid var(--LEGEND2-WHITE);
+}
+.footer__follow-us .footer_ul{
+    padding: 0 0 0 clamp(0.5rem, 1.5vw, 1rem);
+}
+:is(.footer__li-Shopee, .footer__li-Facebook, .footer__li-Instagram, .footer__li-Tik-Tok){
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer__li-Shopee:before {
+    content: '';
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-size: 100%;
+    background-image: url("/Images/shopee.png");
+    background-repeat: no-repeat;
+    margin-right: 0.5rem;
+    transform: translateY(0.2rem);
+}
+.footer__li-Facebook:before {
+    content: '';
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-size: 100%;
+    background-image: url("/Images/facebook.png");
+    background-repeat: no-repeat;
+    margin-right: 0.5rem;
+    transform: translateY(0.2rem);
+}
+.footer__li-Instagram:before {
+    content: '';
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-size: 100%;
+    background-image: url("/Images/Instagram.png");
+    background-repeat: no-repeat;
+    margin-right: 0.5rem;
+    transform: translateY(0.2rem);
+}
+.footer__li-Tik-Tok:before {
+    content: '';
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-size: 100%;
+    background-image: url("/Images/Tik-Tok.png");
+    background-repeat: no-repeat;
+    margin-right: 0.5rem;
+    transform: translateY(0.2rem);
 }
 /* End of Footer Follow-Us */
 
@@ -87,12 +142,36 @@
     width: 25%;
     height: auto;
     padding: 0 clamp(0.5rem, 1.5vw, 1rem);
-    border-left: 2px solid var(--LEGEND2-WHITE);
+    border-left: 1px solid var(--LEGEND2-WHITE);
 }
 .footer__address li:last-child{
     word-break: break-all;
 }
 /* End of Footer Address */
+
+.footer_credits{
+    margin-top: 3rem;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+.footer_credits p{
+    color: var(--LEGEND2-WHITE);
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+}
+.credits{
+    margin: 1.5rem 0;
+}
+.footer_credits a{
+    color: var(--LEGEND2-WHITE);
+}
+.footer_credits a:hover{
+    color: var(--LEGEND3-PINK);
+}
 
 /* EXTRA SMALL SCREEN */
 @media screen and (max-width: 481px) {
@@ -111,21 +190,21 @@
         margin-top: 1rem;
         padding-top: 1rem;
         border-left: 0px solid var(--LEGEND2-WHITE);
-        border-top: 2px solid var(--LEGEND2-WHITE);
+        border-top: 1px solid var(--LEGEND2-WHITE);
     }
     .footer__follow-us{
         width: 100%;
         margin-top: 1rem;
         padding-top: 1rem;
         border-left: 0px solid var(--LEGEND2-WHITE);
-        border-top: 2px solid var(--LEGEND2-WHITE);
+        border-top: 1px solid var(--LEGEND2-WHITE);
     }
     .footer__address{
         width: 100%;
         margin-top: 1rem;
         padding-top: 1rem;
         border-left: 0px solid var(--LEGEND2-WHITE);
-        border-top: 2px solid var(--LEGEND2-WHITE);
+        border-top: 1px solid var(--LEGEND2-WHITE);
     }
 }
 /* SMALL SCREEN */
@@ -145,21 +224,21 @@
         margin-top: 1rem;
         padding-top: 1rem;
         border-left: 0px solid var(--LEGEND2-WHITE);
-        border-top: 2px solid var(--LEGEND2-WHITE);
+        border-top: 1px solid var(--LEGEND2-WHITE);
     }
     .footer__follow-us{
         width: 100%;
         margin-top: 1rem;
         padding-top: 1rem;
         border-left: 0px solid var(--LEGEND2-WHITE);
-        border-top: 2px solid var(--LEGEND2-WHITE);
+        border-top: 1px solid var(--LEGEND2-WHITE);
     }
     .footer__address{
         width: 100%;
         margin-top: 1rem;
         padding-top: 1rem;
         border-left: 0px solid var(--LEGEND2-WHITE);
-        border-top: 2px solid var(--LEGEND2-WHITE);
+        border-top: 1px solid var(--LEGEND2-WHITE);
     }
 }
 /* MEDIUM SCREEN */
