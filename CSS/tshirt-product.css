@@ -11,6 +11,10 @@
     border-bottom: 3px solid black;
     scroll-margin-top: 1rem;
 }
+#tshirt.active{
+    border-bottom: 3px solid black;
+    scroll-margin-top: 1rem;
+}
 #tshort{
     margin-bottom: 0;
 }
@@ -20,10 +24,10 @@
     transition-timing-function: ease;
 }
 :is(.product__shirt, .product__short):hover{
-    filter: drop-shadow(0 0 0.75rem #09131C);
+    filter: drop-shadow(0 0 0.25rem #09131C);
     transform: scale(1.10);
 }
-:is(.product__shirt, .product__short){
+/* :is(.product__shirt, .product__short){
     animation-name: flip-cards;
     animation-duration: 2s;
 }
@@ -34,7 +38,7 @@
     100%{
         transform: rotateY(360deg);
     }
-}
+} */
 /* Shirt */
 .product__shirt{
     width: clamp(20rem, 55vh, 45vh);
@@ -44,8 +48,24 @@
     position: relative;
     transform: scale(1);
     transition-duration: 1s;
-}
 
+    opacity: 0;
+}
+.product__shirt.active{
+    animation-name: scale-up-shirt;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    opacity: 1;
+}
+@keyframes scale-up-shirt {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
 .product__shirt > img {
     display: block;
     width: 100%;
@@ -62,8 +82,24 @@
     position: relative;
     transform: scale(1);
     transition-duration: 1s;
-}
 
+    opacity: 0;
+}
+.product__short.active{
+    animation-name: scale-up-short;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    opacity: 1;
+}
+@keyframes scale-up-short {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
 .product__short > img {
     display: block;
     width: 100%;

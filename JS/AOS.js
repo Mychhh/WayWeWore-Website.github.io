@@ -1,6 +1,6 @@
 let animationOnScroll = document.querySelectorAll(".AOS");
 
-window.addEventListener('scroll', throttle(scanElements, 1000))
+window.addEventListener('scroll', throttle(scanElements, 25))
 
 function scanElements(){
     animationOnScroll.forEach(animationonscroll => {
