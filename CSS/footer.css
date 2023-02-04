@@ -145,8 +145,9 @@
     padding: 0 clamp(0.5rem, 1.5vw, 1rem);
     border-left: 1px solid var(--LEGEND2-WHITE);
 }
-.footer__address li:last-child{
+.footer__address li:nth-child(3){
     word-break: break-all;
+    overflow-wrap: break-word;
 }
 /* End of Footer Address */
 
@@ -174,7 +175,6 @@
 .footer_credits a:hover{
     color: var(--LEGEND3-PINK);
 }
-
 /* EXTRA SMALL SCREEN */
 @media screen and (max-width: 481px) {
     .footer h1{
@@ -336,7 +336,7 @@
             transform: translateY(0);
         }
     }
-    .footer .active-footer-links{
+    .footer .active-footer-follow{
         animation-name: footer-ease-in;
         animation-duration: 0.5s;
         animation-timing-function: ease-in;
@@ -354,7 +354,7 @@
         }
     }
     .footer .active-footer-address{
-        animation-name: follow-ease-in;
+        animation-name: address-ease-in;
         animation-duration: 0.5s;
         animation-timing-function: ease-in;
         animation-fill-mode: forwards;
