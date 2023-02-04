@@ -52,7 +52,7 @@
     display: flex;
     flex-flow: column nowrap;
     gap: 1vh;
-    border-radius: 1.25rem;
+    /* border-radius: 1.25rem; */
     padding: clamp(2rem, 4.5vh, 3rem);
     background-color: var(--LEGEND1-BLACK);
     color: var(--LEGEND2-WHITE);
@@ -62,7 +62,7 @@
     width: 30%;
     height: 7.5%;
     background-color: var(--LEGEND2-WHITE);
-    border-radius: 0.5rem;
+    /* border-radius: 0.5rem; */
     cursor: pointer;
     font-size: calc(var(--FONT-SIZE) + 0.2vw);
 }
@@ -78,7 +78,7 @@
 .contact-container__message > #message
 {
     width: 100%;    
-    border-radius: 0.3rem;
+    /* border-radius: 0.3rem; */
     font-size: calc(var(--FONT-SIZE) - 0.2vw);
     padding: clamp(0.8rem, 2vh, 1.8rem);
 }

@@ -32,6 +32,26 @@
     height: 70vh;
     position: relative;
     overflow: hidden;
+
+    opacity: 0;
+}
+.recommendation-container__recommendation-slider-container.active{    
+    animation-name: slide-in-right;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 1;
+}
+@keyframes slide-in-right {
+    0%{
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 /* Model background */
 .recommendation-container__slide{
@@ -81,7 +101,7 @@
 .recommendation-container__waywewore > h1{
     padding: clamp(0.5rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem);
     background-color: var(--LEGEND1-BLACK);
-    border-radius: 1vh;
+    /* border-radius: 1vh; */
     transform: rotate(-90deg) translateY(200%);
     letter-spacing: 1rem;
 }

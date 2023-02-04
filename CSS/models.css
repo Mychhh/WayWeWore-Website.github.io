@@ -12,7 +12,6 @@
 #models{
     scroll-margin-top: 8rem;
 }
-
 /* Container of models */
 .models-container__models{
     display: flex;
@@ -45,7 +44,28 @@
     height: 60vh;
     position: relative;
     overflow: hidden;
+    
+    opacity: 0;
 }
+.models-container__models-slider-container.active{    
+    animation-name: slide-in-left;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 1;
+}
+@keyframes slide-in-left {
+    0%{
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
 /* End of WayWeWore */
 
 /* Model Slide */
