@@ -61,6 +61,7 @@
 }
 .footer_ul li{
     margin: var(--FOOTER-TEXT-GAP);
+    margin-bottom: 1rem;
 }
 .footer_ul a{
     text-decoration: none;
@@ -177,11 +178,20 @@
 /* EXTRA SMALL SCREEN */
 @media screen and (max-width: 481px) {
     .footer h1{
-    margin-top: 0;
+        margin-top: 0;
+    }
+    .header_links::after{
+        content: ">";
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        color: var(--LEGEND2-WHITE);
+        transform: rotate(-0.75turn) translateX(10px) translateY(-30px);
+        
     }
     .footer__footer-container{
     flex-flow: column nowrap;
-    margin: 1rem auto 0 auto;
+        margin: 1rem auto 0 auto;
     }
     .footer__logo-dialogue{
         width: 100%;
@@ -206,16 +216,80 @@
         padding-top: 1rem;
         border-left: 0px solid var(--LEGEND2-WHITE);
         border-top: 1px solid var(--LEGEND2-WHITE);
+    }
+    .footer ul{
+        display: none;
+        opacity: 0;
+    }
+    .footer .active-footer-links{
+        animation-name: footer-ease-in;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+        opacity: 1;
+    }
+    @keyframes footer-ease-in {
+        0%{
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .footer .active-footer-follow{
+        animation-name: follow-ease-in;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+        opacity: 1;
+    }
+    @keyframes follow-ease-in {
+        0%{
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .footer .active-footer-address{
+        animation-name: follow-ease-in;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+        opacity: 1;
+    }
+    @keyframes address-ease-in {
+        0%{
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 }
 /* SMALL SCREEN */
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .footer h1{
-    margin-top: 0;
+        margin-top: 0;
+    }
+    .header_links::after{
+        content: ">";
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        color: var(--LEGEND2-WHITE);
+        transform: rotate(-0.75turn) translateX(10px) translateY(-30px);
+        
     }
     .footer__footer-container{
     flex-flow: column nowrap;
-    margin: 1rem auto 0 auto;
+        margin: 1rem auto 0 auto;
     }
     .footer__logo-dialogue{
         width: 100%;
@@ -240,6 +314,61 @@
         padding-top: 1rem;
         border-left: 0px solid var(--LEGEND2-WHITE);
         border-top: 1px solid var(--LEGEND2-WHITE);
+    }
+    .footer ul{
+        display: none;
+        opacity: 0;
+    }
+    .footer .active-footer-links{
+        animation-name: footer-ease-in;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+        opacity: 1;
+    }
+    @keyframes footer-ease-in {
+        0%{
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .footer .active-footer-links{
+        animation-name: footer-ease-in;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+        opacity: 1;
+    }
+    @keyframes footer-ease-in {
+        0%{
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .footer .active-footer-address{
+        animation-name: follow-ease-in;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+        opacity: 1;
+    }
+    @keyframes address-ease-in {
+        0%{
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 }
 /* MEDIUM SCREEN */
