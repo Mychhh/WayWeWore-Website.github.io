@@ -86,8 +86,8 @@ body{
 } 
 /* nav logo */
 .nav #nav__logo{
-    width: clamp(3rem, 7.5vh, 5rem);
-    height: clamp(3rem, 7.5vh, 5rem);
+    width: clamp(1rem, 10vh, 10rem);
+    height: clamp(1rem, 10vh, 10rem);
     border: 0;
     background-color: transparent;
     cursor: pointer;

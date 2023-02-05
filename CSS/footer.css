@@ -32,7 +32,7 @@
     align-items: center;
 }
 .footer-logo{
-    width: clamp(10rem, 12vw, 15rem);
+    width: clamp(7.5rem, 10vw, 12rem);
     height: auto;
     border: 3px solid var(--LEGEND2-WHITE);
     border-radius: 50%;
