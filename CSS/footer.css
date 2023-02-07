@@ -24,7 +24,7 @@
 }
 /* footer logo - dialogue */
 .footer__logo-dialogue{
-    width: 25%;
+    width: 20%;
     height: auto;
     padding: 0 clamp(0.5rem, 1.5vw, 1rem);
     display: flex;
@@ -46,7 +46,7 @@
 
 /* footer links */
 .footer__useful-links{
-    width: 25%;
+    width: 26.66666%;
     height: auto;
     padding: 0 clamp(0.5rem, 1.5vw, 1rem);
     border-left: 1px solid var(--LEGEND2-WHITE);
@@ -79,7 +79,7 @@
 
 /* Footer Follow-Us */
 .footer__follow-us{
-    width: 25%;
+    width: 26.66666%;
     height: auto;
     padding: 0 clamp(0.5rem, 1.5vw, 1rem);
     border-left: 1px solid var(--LEGEND2-WHITE);
@@ -140,7 +140,7 @@
 
 /* Footer Address */
 .footer__address{
-    width: 25%;
+    width: 26.66666%;
     height: auto;
     padding: 0 clamp(0.5rem, 1.5vw, 1rem);
     border-left: 1px solid var(--LEGEND2-WHITE);
